@@ -23,7 +23,8 @@ import re
 import octoprint.plugin
 import Adafruit_PCA9685
 
-pwm = Adafruit_PCA9685.PCA9685()
+#pwm = Adafruit_PCA9685.PCA9685()
+pwm = Adafruit_PCA9685.PCA9685(busnum=3)
 pwm.set_pwm_freq(120)
 
 class PCA9685LED:
